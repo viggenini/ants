@@ -212,7 +212,7 @@ public class MyAntWorld implements AntWorld {
             }
         }
 
-        //Kalla på dispersalpolicy här
+        //Kalla på dispersalpolicy här/lägg in selfContainedDisperse här
 
     }
 
