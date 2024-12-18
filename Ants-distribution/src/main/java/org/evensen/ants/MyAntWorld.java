@@ -212,7 +212,24 @@ public class MyAntWorld implements AntWorld {
             }
         }
 
-        //Kalla på dispersalpolicy här/lägg in selfContainedDisperse här
+        for (FoodSource foodSource : this.foodSourcesList) {
+
+            int mx = (int) foodSource.getPosition().getX();
+            int my = (int) foodSource.getPosition().getY();
+
+            this.dropFoodPheromone(new Position(mx, my), 1);
+
+            //matkällans radie radius-1
+
+            //   System.out.println("Fermon droppad på matkälla" + (new Position(mx,my)));
+            //   System.out.println("Antal mat på" + this.getFoodStrength(new Position(mx,my)));
+        }
+        for (int x = 0; x < this.width; x++) {
+            for (int y = 0; y < this.height; y++) {
+                this.foragingPheromones[x][y] *= 0.95f; // Förångning av letarferomon
+                this.foodPheromones[x][y] *= 0.95f;     // Förångning av matferomon
+            }
+        }
 
     }
 
