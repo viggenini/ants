@@ -1,0 +1,5 @@
+module org.evensen.ants {
+	requires java.base;
+	requires org.junit.jupiter.api;
+	requires commons.math3;
+}

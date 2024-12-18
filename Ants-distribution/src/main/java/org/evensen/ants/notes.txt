@@ -1,0 +1,16 @@
+Vid anrop av dispersePheromones;
+    Kolla varje matkällas position
+        kör dropFoodPheromones på positionerna
+
+        [
+        [fs,fs], [x,y], [x,y], [x,y], [x,y], [x,y]
+        [x,y], [x,y], [x,y], [x,y], [x,y], [x,y]
+        [x,y], [x,y], [x,y], [x,y], [x,y], [x,y]
+        [x,y], [x,y], [x,y], [x,y], [x,y], [x,y]
+        [x,y], [x,y], [x,y], [x,y], [x,y], [x,y]
+        [x,y], [x,y], [x,y], [x,y], [x,y], [x,y]
+        [x,y], [x,y], [x,y], [x,y], [x,y], [x,y]
+        [x,y], [x,y], [x,y], [x,y], [x,y], [x,y]
+                                               ]
+
+
